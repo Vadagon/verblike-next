@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
+import Image from 'next/image'
+
 
 export default function Home({  }) {
   return (
@@ -27,9 +29,9 @@ export default function Home({  }) {
                     <div className="col-lg-6 text-center">
                         <div className="masthead__style-watter--image">
                             <div className="masthead__style-watter--icon flyIn">
-                                <img src="/images/img/masthead-icon.png" className="img-fluid" alt="Icon" />
+                                <Image priority src="/images/img/masthead-icon.png" className="img-fluid" width={565} height={438} alt="Icons"/>
                             </div>
-                            <img src="/images/img/businessman-meditating.png" className="img-fluid" alt="Business Man" />
+                            <Image priority src="/images/img/businessman-meditating.png" className="img-fluid" width={444} height={457} alt="Business Man" />
                         </div>
                     </div>
                 </div>
