@@ -26,6 +26,7 @@ export async function getStaticProps({ params }) {
           width
           height
         }
+        markdown
       }
     }
   `,
