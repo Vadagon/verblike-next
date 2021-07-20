@@ -2542,7 +2542,9 @@ h6{font-size:12px;line-height:22px;margin-bottom:10px;}
 a{transition:all .3s ease-in-out!important;color:#1e5ee5;}
 a:active,a:focus,a:hover{color:#0f44b2;}
 @media (max-width:767px){
-.container,.core-nav .nav-container{width:100%;padding-left:15px;padding-right:15px;}
+.container,.core-nav .nav-container{width:100%;
+    // padding-left:15px;padding-right:15px;
+}
 }
 @media (min-width:1400px){
 .container,.core-nav .nav-container{max-width:1200px;}
@@ -2683,6 +2685,8 @@ button:active,button:focus,button:hover{outline:0;-webkit-box-shadow:none!import
 .nav-opened-menu .nav-container > .wrap-core-nav-list{
     margin-left: 0;
     opacity: 1;
+    margin-top: 0vh;
+    background: white;
 }
 
 

@@ -1,8 +1,12 @@
 import Layout from '/components/layout'
+import Head from 'next/head'
 
 export default function Products(){
     return (
 <Layout>
+<Head>
+                <title>Products</title>
+            </Head>
 {/* <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/products.css"> */}
     <div className="content"> 
         <section className="section-grey services-wrapper" id="products">

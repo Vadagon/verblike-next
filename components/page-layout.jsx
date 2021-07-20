@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from 'next/head'
 import Link from "next/link";
 // import '../styles/post.scss'
 import Date from "/components/date"
@@ -7,6 +8,9 @@ export default function PostLayout({ page }) {
     console.log(page);
     return (
         <main className="content">
+            <Head>
+                <title>{page.title}</title>
+            </Head>
             <link
                 rel="stylesheet"
                 href="https://web.archive.org/web/20210305153011cs_/https://extension.expert/wp-content/themes/chrome.expert/css/post.css"
