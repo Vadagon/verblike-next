@@ -118,7 +118,7 @@ export default function Layout({ children, home }) {
         <div className="container">
           <div className="row text-center text-md-left align-items-center">
             <div className="col-md-6 col-lg-5">
-              <p className="text-md-left copyright-text pb-0 mb-0">Copyrights © 2019. All
+              <p className="text-md-left copyright-text pb-0 mb-0">Copyrights © {new Date().getFullYear()}. All
                 rights reserved by
                 &nbsp;
                 <Link href="/"><a href="/"><u>VerbLike</u></a></Link>

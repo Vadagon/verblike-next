@@ -64,7 +64,7 @@ export default function PostLayout({ page }) {
 }
 
                 <div className="blog__listing-content">
-                    <div className="blog__listing-content--text" dangerouslySetInnerHTML={{ __html: page.content.html }}>
+                    <div className="blog__listing-content--text" dangerouslySetInnerHTML={{ __html: (page.content&&page.content.text.length > 10)?page.content.html:page.markdown }}>
                         {/* <p>
                             If you bothered what orange / red / yellow color of Pending Review
                             mean in

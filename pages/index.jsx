@@ -29,7 +29,6 @@ export async function getStaticProps() {
           id
           name
         }
-        date
       }
     }
   `

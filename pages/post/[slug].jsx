@@ -30,7 +30,7 @@ export async function getStaticProps({ params }) {
           name
         }
         createdAt
-        date
+        markdown
       }
     }
   `,
@@ -82,7 +82,7 @@ export async function getStaticPaths() {
           id
           name
         }
-        date
+        markdown
       }
     }
   `);

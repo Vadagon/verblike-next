@@ -27,7 +27,6 @@ export async function getStaticProps() {
           id
           name
         }
-        date
       }
     }
   `
@@ -64,10 +63,8 @@ export default function Blog({ posts }) {
                                         <div className="popup-wrapper">
                                             <div className="popup-gallery">
                                                 <Link as={`/post/${post.slug}`} href="/post/[slug]">
-                                                    <a>
-                                                        {post.coverImage && <Image src={post.coverImage.url} alt={post.title} width={post.coverImage.width} height={post.coverImage.height} />}
-                                                        <span className="eye-wrapper2"><i className="fa fa-link eye-icon"></i></span>
-                                                    </a>
+                                                    {post.coverImage && <Image src={post.coverImage.url} alt={post.title} width={post.coverImage.width} height={post.coverImage.height} />}
+                                                    <span className="eye-wrapper2"><i className="fa fa-link eye-icon"></i></span>
                                                 </Link>
                                             </div>
                                         </div>
