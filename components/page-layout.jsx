@@ -16,14 +16,14 @@ export default function PostLayout({ page }) {
                 className="blog__listing post-77 post type-post status-publish format-standard has-post-thumbnail hentry category-chrome category-publication tag-chrome tag-extensions tag-pending-review tag-publication tag-review tag-web-store"
             >
                 <div className="blog__listing-thumbnail">
-                    <Image
+                    {page.coverImage&&<Image
                         priority
                         width={page.coverImage.width}
                         height={page.coverImage.height}
                         src={page.coverImage.url}
                         className="img-fluid wp-post-image jetpack-lazy-image"
                         alt="Extensions Status"
-                    />
+                    />}
                 </div>
                 {/*<!-- .post-thumbnail -->*/}
 

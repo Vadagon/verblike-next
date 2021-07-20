@@ -57,7 +57,7 @@ export default function Blog({ posts }) {
                     </div>
                     <div class="row">
                         {posts.map((post) => {
-                            console.log(post);
+                            // console.log(post);
                             return (
                                 <div className="col-md-4" key={post.id}>
                                     <div className="blog-item" >
