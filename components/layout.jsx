@@ -6,8 +6,8 @@ import Link from '/components/link'
 import { useRouter } from "next/router";
 import {init} from '/lib/main';
 
-const name = 'Your Name'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'Vladyslav V.'
+export const siteTitle = 'Verblike Studio'
 
 export default function Layout({ children, home }) {
   const router = useRouter();
@@ -19,7 +19,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Software Development Services and Products"
         />
         <meta
           property="og:image"
