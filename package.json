@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "date-fns": "^2.22.1",
+    "express": "^4.17.1",
     "fs": "0.0.1-security",
     "graphql": "^15.5.1",
     "graphql-request": "^3.4.0",
