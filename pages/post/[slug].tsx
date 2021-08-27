@@ -3,7 +3,7 @@ import utilStyles from '../../styles/utils.module.scss'
 import Date from '../../components/date'
 import Head from 'next/head'
 import { GraphQLClient } from "graphql-request";
-import PostLayout from '/components/page-layout'
+import PostLayout from '../../components/page-layout'
 const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
 
 

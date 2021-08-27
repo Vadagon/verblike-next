@@ -1,12 +1,14 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.scss'
-import Link from 'next/link'
+// import Link from 'next/link'
+import Link from '../components/link'
+
 import Image from 'next/image'
 import { GraphQLClient } from "graphql-request";
 import Date from "../components/date"
 const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
-import {openContactFrom} from '/lib/main';
+import {openContactFrom} from '../lib/main';
 
 
 export async function getStaticProps() {

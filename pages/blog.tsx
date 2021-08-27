@@ -1,8 +1,8 @@
-import Link from '/components/link'
-import Layout from '/components/layout'
+import Link from '../components/link'
+import Layout from '../components/layout'
 import Head from 'next/head'
 import { GraphQLClient } from "graphql-request";
-import Date from "/components/date"
+import Date from "../components/date"
 import Image from 'next/image'
 const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
 
@@ -48,13 +48,13 @@ export default function Blog({ posts }) {
             <section className="section-grey" id="blog">
 
                 <div className="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h2 class="section-title"><a href="#">Blog</a></h2>
-                            <p class="section-subtitle">Latest news, tips and best practices.</p>
+                    <div className="row">
+                        <div className="col-md-12 text-center">
+                            <h2 className="section-title"><a href="#">Blog</a></h2>
+                            <p className="section-subtitle">Latest news, tips and best practices.</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div className="row">
                         {posts.map((post) => {
                             // console.log(post);
                             return (

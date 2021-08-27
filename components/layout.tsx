@@ -2,14 +2,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from './layout.module.scss'
 import utilStyles from '../styles/utils.module.scss'
-import Link from '/components/link'
+import Link from './link'
 import { useRouter } from "next/router";
-import {init} from '/lib/main';
+import {init} from '../lib/main';
 
 const name = 'Vladyslav V.'
 export const siteTitle = 'Verblike Studio'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }: {
+  children: React.ReactNode
+  home?: boolean
+}) {
   const router = useRouter();
   console.log(router);
   init();
