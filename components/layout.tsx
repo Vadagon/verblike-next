@@ -14,12 +14,12 @@ export default function Layout({ children, home }: {
   home?: boolean
 }) {
   const router = useRouter();
-  console.log(router);
+  // console.log(router);
   init();
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/leafs.jpg" />
         <meta
           name="description"
           content="Software Development Services and Products"
@@ -45,7 +45,7 @@ export default function Layout({ children, home }: {
           <div className="nav-header right">
             {/*<?php the_custom_logo(); ?>*/}
             <Link href="/" className="brand custom-logo-link">
-                <img src="/images/img/logo.png" className="logo" alt="extension expert" style={{ height: 32 + 'px' }} />
+                <img src="/images/leafs.jpg" className="logo" alt="extension expert" style={{ height: 32 + 'px', width: 'auto' }} />
             </Link>
             <button className="toggle-bar core-nav-toggle">
               <span className="fa fa-bars"></span>
@@ -65,6 +65,7 @@ export default function Layout({ children, home }: {
               <li className={router.asPath == "/about" ? "active" : ""}><Link href="/about">About</Link></li>
               <li className={router.asPath == "/products" ? "active" : ""}><Link href="/products">Products</Link></li>
               <li className={router.asPath == "/blog" ? "active" : ""}><Link href="/blog">Blog</Link></li>
+              {/* <li className={router.asPath.includes("/account") ? "active" : ""}><Link href="/account/signin">Login</Link></li> */}
             </ul>
           </div>
 
