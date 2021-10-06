@@ -2,7 +2,7 @@ import Image from "next/image";
 import Head from 'next/head'
 import Link from "next/link";
 // import '../styles/post.scss'
-import Date from "/components/date"
+import Date from "./date";
 
 export default function PostLayout({ page }) {
     console.log(page);
@@ -57,7 +57,7 @@ export default function PostLayout({ page }) {
                             // href="https://web.archive.org/web/20210305153011/https://extension.expert/blog/what-the-meaning-of-the-color-pending-review/"
                             rel="bookmark"
                         >
-                            <Date className="entry-date published updated" dateString={page.createdAt} />
+                            <Date dateString={page.createdAt} />
                         </a>
                     </li>
                     {/*							<!-- <li>
